@@ -1,0 +1,48 @@
+body {
+    background-color: orange;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.title {
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-toggle:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
